@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css?family=Yeseva One');
+
+:root {
+    --bg-color: #533745;
+    --accent-color: #437F97;
+    --light-bg-color: #B7C8EC;
+
+    --text-color: white;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Yeseva One';
+}
+
+
+button {
+    border-radius: 5px;
+    padding: 5px 15px;
+    width: 100px;
+    font-size: larger;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-style: solid;
+    transition: all 0.5s;
+}
+
+button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover, a:visited {
+    color: inherit;
+}
+
+a:hover {
+    color: var(--light-bg-color);
+}
+
+ul {
+    display: flex;
+    gap: 35px;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+header h1 {
+    font-size: x-large;
+}
+
+.hero {
+    padding: 70px 100px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 100px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.hero-left {
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.hero-right {
+    justify-content: flex-end;
+}
+
+.hero h1 {
+    margin: 15px 0px;
+}
+
+.hero p {
+    line-height: 1.5;
+    margin: 15px 0px;
+}
+
+.hero button {
+    border: 0px;
+}
+
+.hero img {
+    width: 500px;
+    height: 250px;
+}
+
+.card-container {
+    padding: 50px 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-container h2 {
+    padding: 0px 0px 50px 0px;
+    font-size: xx-large;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card img {
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+    border-color: var(--accent-color);;
+    width: 200px;
+    height: 200px;
+}
+
+.card p {
+    padding: 10px 0px;
+}
+
+.quote-container {
+    background-color: var(--light-bg-color);
+    padding: 70px 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.quote {
+    font-size: x-large;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.author {
+    align-self: flex-end;
+    font-size: large;
+}
+
+.newsletter-container {
+    padding: 70px 200px;
+}
+
+.newsletter-card {
+    background-color: var(--accent-color);;
+    color: var(--text-color);
+    border-radius: 15px;
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 70px;
+}
+
+.newsletter-card h3 {
+    padding: 10px 0px;
+    font-size: x-large;
+}
+
+.newsletter-card button {
+    border-color: var(--text-color);
+    height: 40px;
+    width: 150px;
+}
+
+.newsletter-card-left {
+    align-self: flex-start;
+}
+
+.newsletter-card-right {
+    display: flex;
+    gap: 50px;
+}
+
+footer {
+    background-color: var(--bg-color);
+    padding: 20px 0px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+}
